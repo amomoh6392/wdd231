@@ -145,6 +145,7 @@ nav {
     padding: var(--space-small);
     text-align: center;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .completed {
@@ -163,9 +164,6 @@ nav {
 }
 .certificate p{
     text-align: center;
-}
-#courses article {
-    cursor: pointer;
 }
 
 #courses article:hover {
