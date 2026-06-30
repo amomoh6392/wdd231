@@ -1,0 +1,210 @@
+:root {
+    --background-color: #d3e2f5;
+    --accent-color: #042211; 
+    --card-color: #75b69d;
+    --space-small: 1rem;
+}
+
+body {
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+    font-size: large;
+    background:var(--background-color);
+}
+header,
+main,
+footer {
+    padding: var(--space-small);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-small);
+    padding: var(--space-small);
+
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+nav {
+    grid-column: 1 / 3;  
+    width: 100%;
+}
+.navigation {
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+
+.navigation.open {
+    display: block;
+}
+
+.navigation li {
+    background: var(--accent-color);
+    margin: .25rem 0;
+}
+
+.navigation a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.navigation a:hover {
+    background: #9ea7a5;
+}
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✕";
+}
+
+.home-grid {
+    display: grid;
+    gap: var(--space-small);
+}
+
+.card,
+.certificate {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--card-color);
+}
+.card h2,
+.certificate h2 {
+    background: var(--accent-color);
+    color: white;
+    margin: 0;
+    padding: .75rem;
+    text-align: center;
+}
+.card p {
+    padding: var(--space-small);
+}
+.card img {
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin: var(--space-small) auto;
+    border-radius: 8px;
+}
+.filters {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    margin: var(--space-small) 0;
+}
+
+.filters button {
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #333;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 8px;
+    
+}
+
+.filters button:hover {
+    background-color: #ddd;
+}
+
+.filters button.active {
+    background-color: #1f444b;
+    color: white;
+    font-weight: bold;
+}
+#courses {
+    display: grid;
+    gap: .5rem;
+}
+
+#courses article {
+    border: 1px solid #333;
+    padding: var(--space-small);
+    text-align: center;
+    border-radius: 8px;
+}
+
+.completed {
+    background-color: #1f444b;
+    color: white;
+}
+.completed h3::after {
+    content: " ✓";
+    color: #7CFC00;
+    font-weight: bold;
+}
+
+.not-completed {
+    background-color: var(--card-color);
+    color: black;
+}
+.certificate p{
+    text-align: center;
+}
+#courses article {
+    cursor: pointer;
+}
+
+#courses article:hover {
+    transform: scale(1.03);
+    transition: .2s;
+}
+
+dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 1.5rem;
+    max-width: 500px;
+    background: var(--background-color);
+}
+
+dialog::backdrop {
+    background: rgba(0,0,0,.6);
+}
+
+#close-modal {
+    float: right;
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-small);
+}
+
+.social img {
+    width: 50px;
+    height: auto;
+}

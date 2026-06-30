@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD231 | Abinadi Momoh Oke</title>
+    <meta name="description" content="WDD231 course home page by Abinadi Momoh Oke">
+    <meta name="author" content="Abinadi Momoh Oke">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large-veiw.css">
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="AM@17">
+            <span>Abinadi Momoh Oke</span>
+        </div>
+        <button id="menu" aria-label="Open navigation menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">Chamber Project</a></li>
+                <li><a href="#">Final</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="home-grid">
+        <h1>HOME</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <p>
+                My name is Abinadi Momoh Oke. I live in Warri, Delta State, Nigeria. I am studying Web and Computer Programming through BYU-Pathway and enjoy creating websites using HTML, CSS, and JavaScript.
+            </p>
+        </section>
+        <section class="card">
+                <h2>Student Photo</h2>
+                <img src="images/profile.jpg" alt="Abinadi Momoh Photo" loading="lazy">
+        </section> 
+        <section class="certificate">
+                <h2>Web Certificate Courses</h2>
+                <div class="filters">
+                    <button id="all">All</button>
+                    <button id="cse">CSE</button>
+                    <button id="wdd">WDD</button>
+                </div>
+                <div id="courses"></div>
+                <dialog id="course-details">
+                    <button id="close-modal" aria-label="Close course details">❌</button>
+
+                    <h2 id="course-name"></h2>
+
+                    <p>
+                        <strong>Credits:</strong>
+                        <span id="course-credits"></span>
+                    </p>
+
+                    <p>
+                        <strong>Description:</strong>
+                        <span id="course-description"></span>
+                    </p>
+
+                    <p>
+                        <strong>Technology:</strong>
+                        <span id="course-tech"></span>
+                    </p>
+                </dialog>
+                <p>
+                    The total credits for course listed above is
+                    <span id="credits"></span>
+                </p>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://linkedin.com" aria-label="Visit my LinkedIn profile">
+                <img src="images/linkedin-logo.svg" alt="LinkedIn" width="60" height="50" loading="lazy">
+            </a>
+
+            <a href="https://github.com" aria-label="Visit my GitHub profile">
+                <img src="images/github.svg" alt="GitHub" width="60" height="50" loading="lazy">
+            </a>
+
+            <a href="https://twitter.com" aria-label="Visit my X profile">
+                <img src="images/x.svg" alt="X" width="60" height="50" loading="lazy">
+            </a>
+        </div>
+        <p>&copy; ※<span id="currentyear"></span>※ ABINADI MOMOH OKE ※ NIGERIA ※</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
