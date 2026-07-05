@@ -1,0 +1,32 @@
+{
+    "family_name": "Momoh",
+    "move_in_date": "2002-03-08",
+    "number_of_visit": 4,
+    "visited_by_bishopric": true,
+    "family_members":[
+        {"name":"Jimoh Momoh",
+        "gender": "Male",
+        "birthday": "feb-24-1970"
+        },
+        {"name":"Vivian Momoh",
+        "gender": "Female",
+        "birthday": "may-27-1977"
+        },
+        {"name": "Abinadi Momoh",
+        "gender": "Male",
+        "birthday":"Aug-08-2002"
+        },
+        {"name":"Odion Momoh",
+        "gender": "Male",
+        "birthday":"sept-13-2003"
+        },
+        {"name":"Akere Momoh",
+        "gender": "Male",
+        "birthday":"sept-13-2003"
+        },
+        {"name":"Strenght Momoh",
+        "gender": "Male",
+        "birthday":"Aug-11-2005"
+        }
+    ]
+}
