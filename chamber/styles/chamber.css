@@ -160,7 +160,6 @@ footer a:hover{
     flex: 1;
 }
 .tagline{
-    font-style: italic;
     color:#e5e5e5;
 }.details p{
     word-break: break-all;
