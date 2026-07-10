@@ -172,7 +172,6 @@ footer a:hover{
 .choice{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap:var(--space-small);
     margin: var(--space-small) 0;
 }
@@ -194,7 +193,7 @@ footer a:hover{
 }
 .grid-view {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 0.5rem;
     padding: var(--space-small);
 }
