@@ -21,5 +21,7 @@
         grid-template-columns: repeat(3,1fr);
         align-items: center;
     }
-     
+    .grid-view {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
 }
