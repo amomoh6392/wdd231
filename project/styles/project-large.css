@@ -1,0 +1,21 @@
+@media(min-width: 768px){
+    #menu{
+        display: none;
+    }
+    .navigation{
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+    nav{
+        grid-column: auto;
+    }
+    .list-view{
+        margin-left: 5rem ;
+        margin-right: 5rem;
+    }
+    .grids{
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+    }
+}

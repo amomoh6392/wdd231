@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Warri Bakery",
+    "address": "15 Airport Road, Warri, Delta State",
+    "phone": "+234-801-234-5678",
+    "website": "https://www.warribakery.com",
+    "image": "bakery.webp",
+    "membership": "Gold",
+    "category": "Bakery",
+    "email": "info@warribakery.com",
+    "description": "Fresh bread, cakes, and pastries."
+  },
+  {
+    "id": 2,
+    "name": "Delta Electronics",
+    "address": "24 Effurun Road, Warri, Delta State",
+    "phone": "+234-802-345-6789",
+    "website": "https://www.deltaelectronics.com",
+    "image": "electronics.webp",
+    "membership": "Silver",
+    "category": "Electronics",
+    "email": "sales@deltaelectronics.com",
+    "description": "Home appliances and electronic devices."
+  },
+  {
+    "id": 3,
+    "name": "Royal Hotel",
+    "address": "12 Deco Road, Warri, Delta State",
+    "phone": "+234-803-456-7890",
+    "website": "https://www.royalhotelwarri.com",
+    "image": "hotel.webp",
+    "membership": "Gold",
+    "category": "Hotel",
+    "email": "info@royalhotelwarri.com",
+    "description": "Luxury accommodation and conference facilities."
+  },
+  {
+    "id": 4,
+    "name": "City Pharmacy",
+    "address": "18 Okere Road, Warri, Delta State",
+    "phone": "+234-804-567-8901",
+    "website": "https://www.citypharmacy.com",
+    "image": "pharmacy.webp",
+    "membership": "Bronze",
+    "category": "Healthcare",
+    "email": "contact@citypharmacy.com",
+    "description": "Prescription drugs and health products."
+  },
+  {
+    "id": 5,
+    "name": "Fresh Market",
+    "address": "30 Jakpa Road, Warri, Delta State",
+    "phone": "+234-805-678-9012",
+    "website": "https://www.freshmarket.com",
+    "image": "fresh-market.webp",
+    "membership": "Silver",
+    "category": "Supermarket",
+    "email": "info@freshmarket.com",
+    "description": "Groceries and household essentials."
+  },
+  {
+    "id": 6,
+    "name": "Taste Restaurant",
+    "address": "8 NPA Expressway, Warri, Delta State",
+    "phone": "+234-806-789-0123",
+    "website": "https://www.tasterestaurant.com",
+    "image": "restaurant.webp",
+    "membership": "Gold",
+    "category": "Restaurant",
+    "email": "hello@tasterestaurant.com",
+    "description": "Local and continental dishes."
+  },
+  {
+    "id": 7,
+    "name": "Bright Future Academy",
+    "address": "40 Udu Road, Warri, Delta State",
+    "phone": "+234-807-890-1234",
+    "website": "https://www.brightfutureacademy.com",
+    "image": "bright-future-academy.webp",
+    "membership": "Bronze",
+    "category": "Education",
+    "email": "admin@brightfutureacademy.com",
+    "description": "Quality primary and secondary education."
+  }
+]
