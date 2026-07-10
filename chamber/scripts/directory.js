@@ -56,6 +56,9 @@ function displayMembers(members) {
 
                     <p><strong>Phone:</strong> ${member.phone}</p>
 
+                    <p><strong>Membership Level:</strong> ${member.membership}</p>
+
+                    <p><strong>Field:</strong> ${member.category}</p>
                     <p>
                         <strong>URL:</strong>
                         <a href="${member.website}" target="_blank" rel="noopener noreferrer"> Visit Website
