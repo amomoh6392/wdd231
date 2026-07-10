@@ -1,6 +1,11 @@
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const cards = document.querySelector("#cards");
+
+cards.classList.add("grid-view");
+gridbutton.classList.add("active");
+
+
 gridbutton.addEventListener("click", () => {
     cards.classList.add("grid-view");
     cards.classList.remove("list-view")
@@ -15,7 +20,7 @@ listbutton.addEventListener("click", () => {
     listbutton.classList.add("active");
     gridbutton.classList.remove("active");
 });
-const url = "members.json";
+const url = "data/members.json";
 
 async function getMembers() {
     const response = await fetch(url);
@@ -33,7 +38,7 @@ function displayMembers(members) {
 
         card.innerHTML = `
             <div class="card-info-head">
-                <h3>${member.name}</h3>
+                <h2>${member.name}</h2>
                 <div class="tagline">
                     <p><em>${member.description}</em></p>
                 </div>
@@ -53,7 +58,7 @@ function displayMembers(members) {
 
                     <p>
                         <strong>URL:</strong>
-                        <a href="${member.website}" target="_blank" rel="noopener noreferrer" Visit Website>
+                        <a href="${member.website}" target="_blank" rel="noopener noreferrer"> Visit Website
                             ${member.website}
                         </a>
                     </p>

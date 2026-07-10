@@ -34,7 +34,7 @@ header{
     width: 150px;
     height: auto;
 }
-.logo h1{
+.logo span{
     font-size:1.2rem;
 }
 nav {
@@ -83,7 +83,7 @@ nav {
 #menu.open::before {
     content: "✕";
 }
-main h2{
+main h1{
     text-align: center;
     margin: var(--space-small) 0;
 }
