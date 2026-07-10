@@ -7,6 +7,9 @@
         justify-content: flex-end;
         gap: 1rem;
     }
+    .logo h1{
+        font-size:2rem;
+    }
     nav{
         grid-column: auto;
     }
@@ -18,4 +21,5 @@
         grid-template-columns: repeat(3,1fr);
         align-items: center;
     }
+     
 }
