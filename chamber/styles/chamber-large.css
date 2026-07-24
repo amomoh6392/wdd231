@@ -24,18 +24,7 @@
     .grid-view {
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
-    .hero-text{
-        background: #88b9a2;
-        left: 25%;
-        top: 10%;
-        bottom: 80%;
-        padding: 1rem 2rem;
-        border-radius: 8px;
-    }
-    .join-btn{
-        left: 42%;
-    }
-
+    
     .events{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
