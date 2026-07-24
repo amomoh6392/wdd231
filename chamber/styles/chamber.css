@@ -131,6 +131,8 @@ footer a:hover{
 }
 .hero img{
     width: 100%;
+    height: 60vh;
+    object-fit: cover;
     display: block;
 }
 .hero-text {
@@ -139,7 +141,7 @@ footer a:hover{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: rgb(37, 53, 1);
+    color: rgb(245, 237, 237);
     width: 90%;
 }
 .hero-text h1 {
