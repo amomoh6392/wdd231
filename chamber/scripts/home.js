@@ -1,45 +1,23 @@
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
 const cards = document.querySelector("#cards");
-
-cards.classList.add("grid-view");
-gridbutton.classList.add("active");
-
-
-gridbutton.addEventListener("click", () => {
-    cards.classList.add("grid-view");
-    cards.classList.remove("list-view")
-
-    gridbutton.classList.add("active");
-    listbutton.classList.remove("active");
-});
-listbutton.addEventListener("click", () => { 
-    cards.classList.add("list-view");
-    cards.classList.remove("grid-view");
-
-    listbutton.classList.add("active");
-    gridbutton.classList.remove("active");
-});
-const membersUrl = "data/members.json";
-
-async function getMembers() {
-    const response = await fetch(membersUrl);
-    const members = await response.json();
+const url = "date/members.json";
+async function getmembers() {
+    const response = await fetch(url);
+    const member = await response.json();
 
     displayMembers(members);
 }
 
-getMembers();
-
-
+getmembers();
 function displayMembers(members) {
+    co
+    const randomIndex = Math.floor(Math.random() * cards, length);
     members.forEach(member => {
-        const card = document.createElement("section");
+        const card = document.querySelector("section");
 
         card.innerHTML = `
-            <div class="card-info-head">
-                <h2>${member.name}</h2>
-                <div class="tagline">
+            <div class= card-info-head>
+                <h3>${member.name}</h3>
+                div class="tagline">
                     <p><em>${member.description}</em></p>
                 </div>
             </div>
@@ -57,8 +35,6 @@ function displayMembers(members) {
                     <p><strong>Phone:</strong> ${member.phone}</p>
 
                     <p><strong>Membership Level:</strong> ${member.membership}</p>
-
-                    <p><strong>Field:</strong> ${member.category}</p>
                     <p>
                         <strong>URL:</strong>
                         <a href="${member.website}" target="_blank" rel="noopener noreferrer"> Visit Website
@@ -67,9 +43,7 @@ function displayMembers(members) {
                     </p>
                 </div>
             </div>
-
         `;
 
-        cards.appendChild(card);
     });
 }
