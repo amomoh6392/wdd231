@@ -1,23 +1,22 @@
 const cards = document.querySelector("#cards");
 const url = "data/members.json";
-async function getmembers() {
+async function getMembers() {
     const response = await fetch(url);
-    const member = await response.json();
+    const members = await response.json();
 
     displayMembers(members);
 }
 
-getmembers();
+getMembers();
 function displayMembers(members) {
-    co
-    const randomIndex = Math.floor(Math.random() * cards, length);
+    const randomIndex = Math.floor(Math.random() * members.length); const randomIndex = Math.floor(Math.random() * cards, length);
     members.forEach(member => {
-        const card = document.querySelector("section");
+        const card = document.createSelector("section");
 
         card.innerHTML = `
             <div class= card-info-head>
                 <h3>${member.name}</h3>
-                div class="tagline">
+                <iv class="tagline">
                     <p><em>${member.description}</em></p>
                 </div>
             </div>
@@ -44,6 +43,6 @@ function displayMembers(members) {
                 </div>
             </div>
         `;
-
+        cards.appendChild(card);
     });
 }
