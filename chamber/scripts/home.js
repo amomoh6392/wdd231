@@ -1,5 +1,5 @@
 const cards = document.querySelector("#cards");
-const url = "date/members.json";
+const url = "data/members.json";
 async function getmembers() {
     const response = await fetch(url);
     const member = await response.json();
