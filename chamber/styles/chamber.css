@@ -310,7 +310,6 @@ form input, form select, form textarea{
     font-size: var(--space-small);
     background: #d5f5e2;
     transition: 0.3s;
-    font-size: 1rem;
     color: var(--primary-color);
 }
  
