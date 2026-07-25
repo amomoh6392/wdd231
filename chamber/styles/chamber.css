@@ -103,7 +103,7 @@ footer a:hover{
     color: var(--secondary-color);
     text-decoration: underline;
 }
-.grids{
+.grids, .join-container{
     display: grid;
     gap:var(--meduim-space);
 }
@@ -126,6 +126,198 @@ footer a:hover{
 .social a {
     display: inline-block;
 }
+.thanks{
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: left;
+    background: var(--card-color);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,.2);
+
+    opacity: 0;
+    transform: translateY(20px);
+    animation: cardAppear .8s ease forwards;;
+}
+.thanks h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--secondary-color);
+}
+.thanks p {
+    margin: 1rem 0;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+.thanks strong {
+    color: var(--secondary-color);
+}
+.thanks span {
+    margin-left: .5rem;
+}
+/*join page CSS*/
+.card {
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: var(--space-small);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: cardAppear 0.8s ease forwards;
+    background: var(--card-color);
+    color: white;
+    box-shadow: 0 4px rgba(0,0,0,.2);
+}
+.card a{
+    display:inline-block;
+    margin-top: var(--space-small);
+    padding: 0.5rem var(--space-small);
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+.card a:hover{
+    background:white;
+    color:var(--primary-color);
+}
+dialog{
+    padding: var(--meduim-space);
+    border-radius: 10px;
+    border: none;
+    max-width: 400px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    width: 90%;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+dialog::backdrop{
+    background: rgba(0,0,0,.5);
+}
+dialog button{
+    display: block;
+    margin: 1.5rem auto 0;
+    padding: 0.6rem var(--space-small);
+    background: var(--primary-color);
+    border: none;
+    color: wheat;
+    border-radius: 6px;
+    cursor: pointer;
+    align-self: center;
+}
+label:has(input[required])::after{
+    content:"※";
+    color: rgb(3, 0, 0);
+}
+.card:nth-child(1){
+    animation-delay: 0.3s;
+}
+.card:nth-child(2){
+    animation-delay: 0.6s;
+}
+.card:nth-child(3){
+    animation-delay: 0.9s;
+}
+.card:nth-child(4){
+    animation-delay: 1.2s;
+}
+@keyframes cardAppear{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes formAppear{
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.join-container{
+    display: grid;
+    gap: var(--meduim-space);
+    padding: var(--meduim-space) var(--space-small);
+    max-width: 1200px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: formAppear 0.8s ease forwards;
+}
+form{
+    background: var(--card-color);
+    padding: var(--meduim-space);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-small);
+    margin-bottom: var(--space-small);
+}
+
+form label{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color:white;
+}
+input{
+    margin-top: var(--space-small);
+}
+input[type="submit"]{
+    margin-top: var(--space-small);
+    width: 100%;
+    padding: var(--space-small);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: wheat;
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: var(--space-small);
+}
+input[type="submit"]:hover{
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    transform:translateY(-2px);
+}
+form input:focus,
+form select:focus,
+form textarea:focus{
+    outline:none;
+    border-color:var(--secondary-color);
+    box-shadow:0 0 8px rgba(121,224,166,.5);
+}
+form input, form select, form textarea{
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    margin-top: 0.4rem;
+    font-size: var(--space-small);
+    background: #d5f5e2;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+ 
+textarea{
+    min-height: 120px;
+    resize: vertical;
+}
+
 /*Home page CSS*/
 .hero{
     position: relative;
@@ -328,6 +520,7 @@ footer a:hover{
     display:flex;
     flex-direction:column;
     gap: var(--space-small);
+    margin: var(--space-small);
 }
 
 .list-view img {

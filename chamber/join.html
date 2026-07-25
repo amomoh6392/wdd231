@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/chamber-large.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
@@ -36,13 +37,129 @@
         </nav>
     </header>
     <main>
-        <h1>Become a member in the AM@17 Chamber of Commerce </h1>
+        <h1>Become a Member of AM@17 Chamber of Commerce </h1>
+        <div class="join-container">
+            <form method="get" action="thankyou.html">
+                <label for="first">
+                    First Name
+                    <input id="first" type="text" name="first" required title="Enter your first name" autocomplete="given-name">
+                </label>
+                <label for="last">
+                    Last Name
+                    <input id="last" type="text" name="last" required title="Enter your last name" autocomplete="family-name">
+                </label>
+                <label for="organization-title">
+                    Organization Title
+                    <input id="organization-title" type="text" name="organizationTitle" title="Enter your organization title" autocomplete="organization-title"
+                    pattern="[A-Za-z\- ]{7,}">
+                </label>
+                <label for="email">
+                    Email
+                    <input id="email" type="email" name="email" required autocomplete="email" placeholder="example@email.com" title="Enter a valid email address">
+                </label>
+                <label for="phone">
+                    Mobile Phone 
+                    <input id="phone" type="tel" name="phone" required autocomplete="tel" title="Enter a valid phone number" pattern="[0-9 +\-]{10,15}">
+                </label>
+                <label for="organization">
+                    Business name
+                    <input id="organization" type="text" name="organization"  required autocomplete="organization" title="Enter your Business name">
+                </label>
+                <label for="membership">
+                    Membership Level
+                    <select name="membership" id="membership" required>
+                        <option value="" selected disabled>Select a membership level</option>
+
+                        <option value="np">NP Membership</option>
+
+                        <option value="bronze">Bronze Membership</option>
+
+                        <option value="silver">Silver Membership</option>
+
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+                <label for="description">
+                    Business Description
+                    <textarea name="description" title="Tell us more about your organization" id="description"></textarea>
+                </label>
+                <input type="hidden" id="timestamp" name="timestamp">
+                <input type="submit" value="Apply for Membership">
+
+            </form>
+            <section class="membership">
+                <div class="card">
+                    <h2>Non-profit Membership</h2>
+                    <p>No annual fee.</p>
+                    <a href="#" id="npButton">Learn More</a>
+                </div>
+                <div class="card">
+                    <h2>Bronze Membership</h2>
+                    <p>$15 annual membership fee</p>
+                    <a href="#" id="bronzeButton">Learn More</a>
+                </div>
+                <div class="card">
+                    <h2>Silver Membership</h2>
+                    <p>$30 annual fee.</p>
+                    <a href="#" id="silverButton">Learn More</a>
+                    
+                </div>
+                <div class="card">
+                    <h2>Gold Membership</h2>
+                    <p>$60 annual fee.</p>
+                    <a href="#" id="goldButton">Learn More</a>
+                </div>
+            </section> 
+            <dialog id="npModal">
+                    <h2>Non-profit Membership</h2>
+                    <ul>
+                        <li>Perfect for nonprofit organization</li>
+                        <li>No annual membership fee</li>
+                        <li>One free consultation each year</li>
+                        <li>One quarterly voting opportunity</li>
+                    </ul>
+                    <button id="closeNp" type="button">Close</button>
+                </dialog>
+                <dialog id="bronzeModal">
+                    <h2>Bronze Membership</h2>
+                    <ul>
+                        <li>Perfect for for-profit organizations</li>
+                        <li>$15 annual membership fee</li>
+                        <li>Two free consultations each year</li>
+                        <li>Three quarterly voting opportunities</li>
+                        <li>One-time access to Chamber networking events</li>
+                    </ul>
+                    <button id="closeBronze" type="button">Close</button>
+                </dialog>
+                <dialog id="silverModal">
+                    <h2>Silver Membership</h2>
+                    <ul>
+                        <li>Perfect for for-profit organizations</li>
+                        <li>$30 annual membership fee</li>
+                        <li>Three free consultations each year</li>
+                        <li>Five quarterly voting opportunities</li>
+                        <li>Limited access to Chamber networking events</li>
+                    </ul>
+                    <button id="closeSilver" type="button">Close</button>
+                </dialog>
+                <dialog id="goldModal">
+                    <h2>Gold Membership</h2>
+                    <ul>
+                        <li>Perfect for for-profit organizations</li>
+                        <li>$60 annual membership fee</li>
+                        <li>One free consultation each month</li>
+                        <li>Unlimited participation in quarterly voting</li>
+                        <li>Unlimited access to Chamber events and networking opportunities</li>
+                    </ul>
+                    <button id="closeGold" type="button">Close</button>
+                </dialog>
+        </div>
     </main>
 
     <footer>
        <section class="grids">
             <div class="grid">
-                <p><strong>AM@17 Chamber of Commerce Chamber Membership Join </strong></p>
+                <p><strong>AM@17 Chamber of Commerce Membership </strong></p>
                 <p>15 JEO ENO STREET</p>
                 <p>AM@17 MAIL 6392</p>
                 <p><a href="mailto:info@am17chamber.org">      info@am17chamber.org</a></p>

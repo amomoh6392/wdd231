@@ -51,18 +51,18 @@ function displayMembers(members) {
                     width="300"
                     height="200">
                 <div class="details">
-                    <p><strong>Email:</strong> ${member.email}</p>
-                    <p><strong>Address:</strong> ${member.address}</p>
+                    <p><strong>Email:</strong><span>${member.email}</span></p>
+                    <p><strong>Address:</strong><span> ${member.address} </span></p>
 
-                    <p><strong>Phone:</strong> ${member.phone}</p>
+                    <p><strong>Phone:</strong><span>${member.phone}</span></p>
 
-                    <p><strong>Membership Level:</strong> ${member.membership}</p>
+                    <p><strong>Membership Level:</strong> <span> ${member.membership} </span></p>
 
-                    <p><strong>Field:</strong> ${member.category}</p>
+                    <p><strong>Field:</strong> <span> ${member.category} </span></p>
                     <p>
-                        <strong>URL:</strong>
-                        <a href="${member.website}" target="_blank" rel="noopener noreferrer"> Visit Website
-                            ${member.website}
+                        <strong>URL:</strong><span> Visit Website
+                        <a href="${member.website}" target="_blank" rel="noopener noreferrer">
+                             ${member.website} </span>
                         </a>
                     </p>
                 </div>
