@@ -321,50 +321,6 @@ textarea{
     display: grid;
     gap: var(--space-small);
     padding: var(--space-small);
-
-    grid-template-areas:
-    "one"
-    "two"
-    "three"
-    "four"
-    "five"
-    "six"
-    "seven"
-    "eight";
-
-}
-
-
-#discover-cards .card:nth-child(1){
-    grid-area: one;
-}
-
-#discover-cards .card:nth-child(2){
-    grid-area: two;
-}
-
-#discover-cards .card:nth-child(3){
-    grid-area: three;
-}
-
-#discover-cards .card:nth-child(4){
-    grid-area: four;
-}
-
-#discover-cards .card:nth-child(5){
-    grid-area: five;
-}
-
-#discover-cards .card:nth-child(6){
-    grid-area: six;
-}
-
-#discover-cards .card:nth-child(7){
-    grid-area: seven;
-}
-
-#discover-cards .card:nth-child(8){
-    grid-area: eight;
 }
 #discover-cards img {
     width: 100%;
@@ -435,7 +391,6 @@ textarea{
 }
 .weather,
 .forecast {
-    background-color: var(--card-color);
     padding: 1rem;
     box-shadow: 0 2px 8px rgba(0,0,0,.2);
     margin: var(--space-small);
@@ -485,7 +440,6 @@ textarea{
     background-color: var(--primary-color);
     padding: 1rem;
     border-radius: 8px;
-    color: white;
 }
 
 /*Directory page CSS*/
