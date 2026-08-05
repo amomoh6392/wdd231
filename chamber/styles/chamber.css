@@ -156,8 +156,22 @@ footer a:hover{
 .thanks span {
     margin-left: .5rem;
 }
+.card a,
+.choice button,
+dialog button,
+input[type="submit"] {
+
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
 /*join page CSS*/
-.card {
+.card,
+#cards section,
+.spotlight-card {
     padding: 1.5rem;
     border-radius: 10px;
     margin-bottom: var(--space-small);
@@ -172,12 +186,8 @@ footer a:hover{
 .card a{
     display:inline-block;
     margin-top: var(--space-small);
-    padding: 0.5rem var(--space-small);
     background: var(--secondary-color);
     color: var(--primary-color);
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
 }
 .card a:hover{
     background:white;
@@ -206,10 +216,8 @@ dialog button{
     margin: 1.5rem auto 0;
     padding: 0.6rem var(--space-small);
     background: var(--primary-color);
-    border: none;
     color: wheat;
     border-radius: 6px;
-    cursor: pointer;
     align-self: center;
 }
 label:has(input[required])::after{
@@ -497,12 +505,7 @@ textarea{
 }
 
 /*Directory page CSS*/
-#cards section, .spotlight-card {
-    background-color: var(--card-color);
-    padding: 0.75rem;
-    border-radius: 10px;
-    color: white;
-}
+
 .card-info{ 
     margin-top: 10px;
     display: flex;
@@ -546,15 +549,12 @@ textarea{
     margin: var(--space-small) 0;
 }
 .choice button{
-    padding: 0.75rem 1.5rem;
-    border: none;
     border-radius: 0.5rem;
-    cursor: pointer;
     background-color: var(--card-color);
     color: white;
     transition: 0.3s;
 }
-.choice button.active,.learn-more{
+.choice button.active{
     background-color: var(--primary-color);
     color: wheat;
 }

@@ -26,7 +26,7 @@ places.forEach(place => {
 
         <p>${place.description}</p>
 
-        <button class="learn-more">Learn More</button>
+        <button class="btn">Learn More</button>
     `;
 
 
