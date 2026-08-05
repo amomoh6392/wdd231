@@ -6,6 +6,7 @@
     --text-color:#010704;
     --space-small: 1rem;
     --meduim-space: 2rem;
+    --border-radius: 10px;
 }
 *{
     margin: 0;
@@ -52,7 +53,6 @@ nav {
 }
 .navigation a {
     display: block;
-    color: white;
     text-decoration: none;
     padding: var(--space-small);
     transition: 0.3s;
@@ -128,9 +128,7 @@ footer a:hover{
     max-width: 400px;
     margin: 2rem auto;
     padding: 2rem;
-    border-radius: 10px;
     text-align: left;
-    background: var(--card-color);
     box-shadow: 0 4px 10px rgba(0,0,0,.2);
     opacity: 0;
     transform: translateY(20px);
@@ -162,21 +160,26 @@ input[type="submit"] {
     cursor: pointer;
     font-weight: bold;
 }
-footer,.choice button,.join-btn,footer a,.spot-lights h2 , form label,.weather,.forecast,.thanks {
+footer,.navigation a,.choice button,.join-btn,footer a,.spot-lights h2 , form label,.weather,.forecast,.thanks {
     color: white;
 }
+.events,.weather,.forecast,.thanks,form,.card,#cards section,.spotlight-card {
+    background: var(--card-color);
+}
+.card,#cards section,.spotlight-card,.thanks,.events,.weather,.forecast,form,dialog {
+    border-radius: var(--radius);
+}
+
 /*join page CSS*/
 .card,
 #cards section,
 .spotlight-card {
     padding: 1.5rem;
-    border-radius: 10px;
     margin-bottom: var(--space-small);
     text-align: center;
     opacity: 0;
     transform: translateY(20px);
     animation: cardAppear 0.8s ease forwards;
-    background: var(--card-color);
     color: white;
     box-shadow: 0 4px rgba(0,0,0,.2);
 }
@@ -192,7 +195,6 @@ footer,.choice button,.join-btn,footer a,.spot-lights h2 , form label,.weather,.
 }
 dialog{
     padding: var(--meduim-space);
-    border-radius: 10px;
     border: none;
     max-width: 400px;
     background: var(--secondary-color);
@@ -262,9 +264,7 @@ label:has(input[required])::after{
     animation: formAppear 0.8s ease forwards;
 }
 form{
-    background: var(--card-color);
     padding: var(--meduim-space);
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
     gap: var(--space-small);
@@ -282,7 +282,6 @@ input{
 input[type="submit"]{
     margin-top: var(--space-small);
     width: 100%;
-    padding: var(--space-small);
     background: var(--primary-color);
     color: wheat;
     transition: 0.3s;
@@ -421,9 +420,7 @@ textarea{
     color: var(--primary-color);
 }
 .events{
-    background: var(--card-color);
     padding: var(--space-small);
-    border-radius: 10px;
     margin: var(--space-small);
     color: rgb(253, 221, 163);
 }
@@ -440,7 +437,6 @@ textarea{
 .forecast {
     background-color: var(--card-color);
     padding: 1rem;
-    border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,.2);
     margin: var(--space-small);
 }
