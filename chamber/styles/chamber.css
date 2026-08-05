@@ -6,7 +6,7 @@
     --text-color:#010704;
     --space-small: 1rem;
     --meduim-space: 2rem;
-    --border-radius: 10px;
+    --radius: 10px;
 }
 *{
     margin: 0;
