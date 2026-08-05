@@ -317,7 +317,71 @@ textarea{
     min-height: 120px;
     resize: vertical;
 }
+/* Discover Page CSS */
 
+#discover-cards {
+
+    display: grid;
+    gap: var(--space-small);
+    padding: var(--space-small);
+
+    grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    "six"
+    "seven"
+    "eight";
+
+}
+
+
+#discover-cards .card:nth-child(1){
+    grid-area: one;
+}
+
+#discover-cards .card:nth-child(2){
+    grid-area: two;
+}
+
+#discover-cards .card:nth-child(3){
+    grid-area: three;
+}
+
+#discover-cards .card:nth-child(4){
+    grid-area: four;
+}
+
+#discover-cards .card:nth-child(5){
+    grid-area: five;
+}
+
+#discover-cards .card:nth-child(6){
+    grid-area: six;
+}
+
+#discover-cards .card:nth-child(7){
+    grid-area: seven;
+}
+
+#discover-cards .card:nth-child(8){
+    grid-area: eight;
+}
+#discover-cards img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+#discover-cards .card {
+
+    min-width: 0;
+    overflow: hidden;
+
+}
 /*Home page CSS*/
 .hero{
     position: relative;
@@ -366,7 +430,7 @@ textarea{
     margin: var(--space-small);
     color: rgb(253, 221, 163);
 }
-.events h2 {
+.events h2, #visit-message {
     margin-bottom: var(--space-small);
     text-align: center;
 }
@@ -501,7 +565,7 @@ textarea{
     color: white;
     transition: 0.3s;
 }
-.choice button.active{
+.choice button.active,.learn-more{
     background-color: var(--primary-color);
     color: wheat;
 }
@@ -525,4 +589,32 @@ textarea{
 
 .list-view img {
     display: none;
+}
+@media screen and (min-width:641px){
+
+
+#discover-cards{
+grid-template-columns: repeat(2, minmax(0, 1fr));
+grid-template-areas:
+    "one two"
+    "three four"
+    "five six"
+    "seven eight";
+    gap: var(--space-small);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-small);
+
+}
+#discover-cards img {
+    transition: transform .3s ease, filter .3s ease;
+}
+
+
+#discover-cards img:hover {
+
+    transform: scale(1.05);
+    filter: brightness(80%);
+}
 }

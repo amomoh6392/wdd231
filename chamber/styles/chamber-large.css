@@ -76,3 +76,44 @@
         max-width: 700px;
     }
 }
+@media screen and (min-width:1025px){
+
+    #discover-cards {
+
+        grid-template-columns: repeat(3, 1fr);
+
+        grid-template-areas:
+
+        "one one two"
+        "three four two"
+        "five six seven"
+        "eight eight seven";
+
+        gap: 1rem;
+        padding: 1rem;
+
+    }
+
+}
+
+
+@media screen and (min-width:641px){
+
+.card img{
+
+transition: .4s ease;
+
+}
+
+
+.card img:hover{
+
+transform:scale(1.05);
+
+filter:brightness(80%);
+
+box-shadow:0 0 10px gray;
+
+}
+
+}
