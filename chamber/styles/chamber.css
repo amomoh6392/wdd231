@@ -439,7 +439,8 @@ textarea{
     padding-bottom: var(--space-small);
     border-bottom: 2px solid var(--primary-color);
 }
-.weather {
+.weather,
+.forecast {
     background-color: var(--card-color);
     color: white;
     padding: 1rem;
@@ -453,7 +454,8 @@ textarea{
     gap: var(--space-small);
 }
 
-.weather h2 {
+.weather h2,
+.forecast h2 {
     margin-bottom: var(--space-small);
     border-bottom: 2px solid var(--secondary-color);
     padding-bottom: .5rem;
@@ -483,19 +485,6 @@ textarea{
 #forecast li {
     padding: .5rem 0;
     border-bottom: 1px solid rgba(255,255,255,.2);
-}
-.current-weather,
-.forecast {
-    background-color: var(--card-color);
-    color: white;
-    padding: var(--space-small);
-    border-radius: 10px;
-}
-.current-weather h2,
-.forecast h2 {
-    margin-bottom: var(--space-small);
-    border-bottom: 2px solid var(--secondary-color);
-    padding-bottom: .5rem;
 }
 
 .spot-lights h2 {
