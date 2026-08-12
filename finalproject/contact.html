@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | AM@17 Dev Portfolio</title>
+    <meta name="description" content="Contact Abinadi Momoh Oke for software development, frontend development, internships, and professional opportunities.">
+    <meta name="author" content="Abinadi Momoh Oke">
+    <meta property="og:title" content="AM@17 Dev Portfolio - Projects">
+    <meta property="og:description" content="Contact Abinadi Momoh Oke for software development, frontend development, internships, and professional opportunities.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/profile.webp">
+    <meta property="og:url" content="https://amomoh6392.github.io/wdd231/finalproject/">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="styles/portfolio-large.css">
+    <script type="module" src="scripts/contact.mjs"></script>
+     <script type="module" src="scripts/navigation.mjs"></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="AM@17 Dev Portfolio logo" width="50" height="50">
+            <span>AM@17 Dev Portfolio</span>
+        </a>
+        <button id="menu-button" aria-label="Open navigation menu">
+            ☰
+        </button>
+        <nav id="navigation">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+    </header>
+    <main>
+         <h1>Contact Me</h1>
+
+    <section class="contact-intro">
+        <p>
+            Thank you for visiting my portfolio.
+            Feel free to contact me regarding internships,
+            software development opportunities, collaborations,
+            or professional networking.
+        </p>
+    </section>
+
+    <div class="contact-grid">
+        <section class="contact-form-section">
+
+        <form action="thankyou.html" method="get">
+
+            <label for="fullname">Full Name</label>
+
+            <input type="text"id="fullname" name="fullname"required autocomplete="name">
+
+            <label for="email">Email Address</label>
+
+            <input type="email" id="email" name="email" required autocomplete="email">
+
+            <label for="subject">Subject</label>
+
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message</label>
+
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <input type="submit"value="Send Message">
+
+        </form>
+
+        </section>
+        <section class="contact-info">
+            <h2>Professional Links</h2>
+            <p><strong>Email:</strong> abinadimomoh00@gmail.com</p>
+            <p><strong>GitHub:</strong>
+                <a href="https://github.com/amomoh6392" target="_blank">amomoh6392</a>
+            </p>
+            <p><strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/abinadi-momoh-204575205"
+                target="_blank">
+                Abinadi Momoh Oke
+                </a>
+            </p>
+        </section>
+    </div>
+        
+    </main>
+    <footer>
+       <section class="grids">
+            <div class="grid">
+                <p><strong>AM@17 Dev Portfolio</strong></p>
+                <p>Warri, Delta State, Nigeria</p>
+                <p>amomoh6392</p>
+                <p><a href="mailto:abinadimomoh00@gmail.com">abinadimomoh00@gmail.com</a></p>
+                <p><a href="tel:+2348168573561">(+234)8168573561</a></p>
+            </div>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/abinadi-momoh-204575205" aria-label="Visit my LinkedIn profile" target="_blank" rel="noopener noreferrer">
+                    <img src="images/linkedin-logo.svg" alt="LinkedIn" width="60" height="50" loading="lazy">
+                </a>
+                <a href="https://github.com/amomoh6392"
+                    aria-label="Visit my GitHub profile"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="images/github.svg" alt="GitHub" width="60" height="50" loading="lazy">
+                </a>
+            </div>
+            <div class="personal">
+                <p>AM@17 Dev Portfolio</p>
+                <p>ABINADI MOMOH OKE</p>
+                <p>&copy; ※<span id="currentyear"></span>※ Warri, Delta state Nigeria ※ </p>
+                <p id="lastModified"></p>
+            </div>
+       </section>
+    </footer>
+</body>
+</html>
+

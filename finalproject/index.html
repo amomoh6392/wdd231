@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home | AM@17 Dev Portfolio</title>
+    <meta name="description" content="AM@17 Dev Portfolio showcasing software development, web development projects, technical skills, education, and professional growth.">
+    <meta name="author" content="Abinadi Momoh Oke">
+    <meta property="og:title" content="AM@17 Dev Portfolio - Projects">
+    <meta property="og:description" content="AM@17 Dev Portfolio showcasing software development, web development projects, technical skills, education, and professional growth.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/profile.webp">
+    <meta property="og:url" content="https://amomoh6392.github.io/wdd231/finalproject/">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="styles/portfolio-large.css">
+    <script type="module" src="scripts/home.mjs"></script>
+    <script type="module" src="scripts/navigation.mjs"></script>
+    <script type="module" src="scripts/main.mjs"></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="AM@17 Dev Portfolio logo" width="50" height="50">
+            <span>AM@17 Dev Portfolio</span>
+        </a>
+        <button id="menu-button" aria-label="Open navigation menu">
+            ☰
+        </button>
+        <nav id="navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+         <section class="hero">
+            <img src="images/profile.jpg" alt="Abinadi Momoh Oke" class="profile-image" width="300" height="300" loading="lazy">
+            <h1>Abinadi Momoh Oke</h1>
+            <p class="hero-title">
+                Aspiring Front-End Developer | Software Development Student
+            </p>
+            <p class="hero-text">
+                Software Development student at BYU-Pathway Worldwide
+                with experience building responsive web applications
+                using HTML, CSS, JavaScript, Python, and C#.
+            </p>
+            <div class="hero-buttons">
+                <a href="projects.html" class="btn">View Projects</a>
+                <a href="contact.html" class="btn secondary">Contact Me</a>
+            </div>
+        </section>
+        <section class="about">
+        <h2>About Me</h2>
+
+        <p>I am a Software Development student at BYU-Pathway Worldwide pursuing a Bachelor of Applied Science in Software Development. I enjoy building user-friendly websites and solving problems through technology.</p>
+        
+        <p>My goal is to build modern, accessible, and responsive web applications while developing my skills as a Front-End Developer and Software Engineer.</p>
+    </section>
+    <section class="skills">
+        <h2>Technical Skills</h2>
+
+        <div class="skills-grid">
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>JavaScript</div>
+            <div>Python</div>
+            <div>C#</div>
+            <div>GitHub</div>
+            <div>Responsive Design</div>
+            <div>Accessibility</div>
+            <div>JSON</div>
+        </div>
+    </section>
+    <section class="education">
+        <h2>Education</h2>
+        <article>
+            <h3>BYU-Pathway Worldwide</h3>
+
+            <p>Bachelor of Applied Science (BASc) in Software Development</p>
+            
+            <p>Expected Graduation: May 2029</p>
+
+            <p>GPA: 3.46</p>
+
+            <p>Heber J. Grant Tuition Scholarship</p>
+        </article>
+    </section>
+    <section class="featured-projects">
+        <h2>Featured Projects</h2>
+        <p>Loading featured projects...</p>
+        <div id="featured-projects-container"></div>
+    </section>
+    <section class="cta">
+        <h2>Let's Work Together</h2>
+
+        <p>
+            Interested in collaborating or discussing
+            internship opportunities?
+        </p>
+
+        <a href="contact.html" class="btn">
+            Contact Me
+        </a>
+    </section>
+    <section class="statistics">
+        <h2>Project Statistics</h2>
+
+        <div id="stats-container"></div>
+        
+    </section>
+    <section class="visitor">
+        <h2>Visitor Statistics</h2>
+
+        <p>
+            You have visited this page
+            <span id="visitCount"></span>
+            times.
+        </p>
+    </section>
+    </main>
+    <footer>
+       <section class="grids">
+            <div class="grid">
+                <p><strong>AM@17 Dev Portfolio</strong></p>
+                <p>Warri, Delta State, Nigeria</p>
+                <p>amomoh6392</p>
+                <p><a href="mailto:abinadimomoh00@gmail.com">abinadimomoh00@gmail.com</a></p>
+                <p><a href="tel:+2348168573561">(+234)8168573561</a></p>
+            </div>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/abinadi-momoh-204575205" aria-label="Visit my LinkedIn profile" target="_blank" rel="noopener noreferrer">
+                    <img src="images/linkedin-logo.svg" alt="LinkedIn" width="60" height="50" loading="lazy">
+                </a>
+                <a href="https://github.com/amomoh6392"
+                    aria-label="Visit my GitHub profile"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="images/github.svg" alt="GitHub" width="60" height="50" loading="lazy">
+                </a>
+            </div>
+            <div class="personal">
+                <p>AM@17 Dev Portfolio</p>
+                <p>ABINADI MOMOH OKE</p>
+                <p>&copy; ※<span id="currentyear"></span>※ Warri, Delta state Nigeria ※ </p>
+                <p id="lastModified"></p>
+            </div>
+       </section>
+    </footer>
+</body>
+</html>
+

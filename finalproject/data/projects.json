@@ -1,0 +1,172 @@
+[
+  {
+    "id": "chamber-directory",
+    "title": "Chamber Directory",
+    "description": "A responsive business directory displaying chamber members dynamically from JSON data.",
+    "technology": "HTML, CSS, JavaScript",
+    "category": "Web Development",
+    "year": "2026",
+    "status": "Completed",
+    "image": "images/chamber-directory.webp",
+    "link": "https://amomoh6392.github.io/wdd231/chamber/directory.html"
+  },
+  {
+    "id": "predictive-maintenance",
+    "title": "Predictive Maintenance",
+    "description": "A C# application that uses object-oriented programming concepts to model and manage predictive maintenance information.",
+    "technology": "C#",
+    "category": "Software Development",
+    "year": "2026",
+    "status": "Completed",
+    "image": "images/predictive-maintenance.webp",
+    "link": "https://github.com/amomoh6392/Am17Cse210"
+
+  },
+  {
+    "id": "study-germany",
+    "title": "Study in Germany",
+    "description": "An informational website helping students explore universities, scholarships, and study opportunities in Germany.",
+    "technology": "HTML, CSS, JavaScript",
+    "category": "Education",
+    "year": "2026",
+    "status": "Completed",
+    "image": "images/study-germany.webp",
+    "link": "https://amomoh6392.github.io/wdd131/project"
+  },
+  {
+    "id": "portfolio-website",
+    "title": "Portfolio Website",
+    "description": "A personal portfolio showcasing projects, skills, education, and professional growth.",
+    "technology": "HTML, CSS, JavaScript",
+    "category": "Portfolio",
+    "year": "2026",
+    "status": "Completed",
+    "image": "images/portfolio-website.webp",
+    "link": "https://amomoh6392.github.io/wdd231/project"
+  },
+  {
+    "id": "temple-album",
+    "title": "Temple Album",
+    "description": "A responsive temple gallery with filtering functionality and dynamic content generation.",
+    "technology": "HTML, CSS, JavaScript",
+    "category": "Web Development",
+    "year": "2026",
+    "status": "Completed",
+    "image": "images/temple-album.webp",
+    "link": "https://amomoh6392.github.io/wdd131/filtered-temples.html"
+  },
+  {
+    "id": "product-review-form",
+    "title": "Product Review Form",
+    "description": "A web form application demonstrating validation, accessibility, and user interaction.",
+    "technology": "HTML, CSS, JavaScript",
+    "category": "Forms",
+    "year": "2026",
+    "status": "Completed",
+    "image": "images/product-review-form.webp",
+    "link": "https://amomoh6392.github.io/wdd131/form.html"
+  },
+  {
+    "id": "bom-top10-app",
+    "title": "BOM Top 10 App",
+    "description": "A JavaScript application for managing and displaying a dynamic list of favorite items.",
+    "technology": "JavaScript",
+    "category": "Web Development",
+    "year": "2026",
+    "status": "Completed",
+    "image": "images/bom-top10-app.webp",
+    "link": "https://abinadimomoh.github.io/wdd131/bom.html"
+  },
+  {
+    "id": "rafting-website",
+    "title": "White Water Rafting Website",
+    "description": "A multi-page rafting company website featuring trips, contact information, and responsive design.",
+    "technology": "HTML, CSS",
+    "category": "Web Design",
+    "year": "2026",
+    "status": "Completed",
+    "image": "images/rafting-website.webp",
+    "link": "https://amomoh6392.github.io/wdd130/wwr/index.html"
+  },
+  {
+    "id": "wdd231-home-page",
+    "title": "WDD231 Home Page",
+    "description": "A course homepage demonstrating responsive navigation, accessibility, and dynamic JavaScript features.",
+    "technology": "HTML, CSS, JavaScript",
+    "category": "Web Development",
+    "year": "2026",
+    "status": "Completed",
+    "image": "images/wdd231-home-page.webp",
+    "link": "https://amomoh6392.github.io/wdd231/"
+  },
+  {
+    "id": "journal-program",
+    "title": "Journal Program",
+    "description": "A C# journal application that allows users to create, save, and load journal entries.",
+    "technology": "C#",
+    "category": "Software Development",
+    "year": "2026",
+    "status": "Completed",
+    "image": "images/journal-program.webp",
+    "link": "https://github.com/amomoh6392/Am17Cse210"
+    
+  },
+  {
+
+  "id": "order-management-system",
+  "title": "Order Management System",
+  "description": "A C# application demonstrating object-oriented programming through customers, products, addresses, and order processing.",
+  "technology": "C#",
+  "category": "Software Development",
+  "year": "2026",
+  "status": "Completed",
+  "image": "images/order-management-system.webp",
+  "link": "https://github.com/amomoh6392/Am17Cse210"
+
+  },
+  {
+    "id": "am17-chamber-discover",
+    "title": "AM@17 Chamber Membership Discover Page",
+    "description": "A responsive discover page displaying chamber membership information and local highlights.",
+    "technology": "HTML, CSS, JavaScript",
+    "category": "Web Development",
+    "year": "2026",
+    "status": "Completed",
+    "image": "images/am17-chamber-discover.webp",
+    "link": "https://amomoh6392.github.io/wdd231/chamber/discover.html"
+  },
+  {
+    "id": "scripture-memorizer",
+    "title": "Scripture Memorizer",
+    "description": "A C# application that helps users memorize scripture passages by progressively hiding words.",
+    "technology": "C#",
+    "category": "Software Development",
+    "year": "2026",
+    "status": "Completed",
+    "image": "images/scripture-memorizer.webp",
+    "link": "https://github.com/amomoh6392/Am17Cse210"
+  },
+  {
+    "id": "mindfulness-program",
+    "title": "Mindfulness Program",
+    "description": "A C# application featuring breathing, reflection, and listing activities to encourage mindfulness.",
+    "technology": "C#",
+    "category": "Software Development",
+    "year": "2026",
+    "status": "Completed",
+    "image": "images/mindfulness-program.webp",
+    "link": "https://github.com/amomoh6392/Am17Cse210"
+  },
+  {
+    "id": "eternal-quest",
+    "title": "Eternal Quest Program",
+    "description": "A goal-tracking application built using object-oriented programming principles in C#.",
+    "technology": "C#",
+    "category": "Software Development",
+    "year": "2026",
+    "status": "Completed",
+    "image": "images/eternal-quest.webp",
+    "link": "https://github.com/amomoh6392/Am17Cse210"
+  }
+]
+
