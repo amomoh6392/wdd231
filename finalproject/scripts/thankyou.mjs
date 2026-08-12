@@ -1,4 +1,4 @@
-const params = new URLSearchParams( window.location.search);
+const params = new URLSearchParams(window.location.search);
 
 const fullname = params.get("fullname");
 
