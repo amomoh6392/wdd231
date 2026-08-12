@@ -79,7 +79,7 @@ header {
 #navigation a:hover,
 #navigation a:focus,
 #navigation a.active {
-    color: var(--soft-gold);
+    color: var(--champagne);
 }
 main {
     max-width: 1200px;
@@ -257,7 +257,6 @@ strong {
     background-color: var(--emerald-ink);
     color: var(--champagne);
     border: none;
-    cursor: pointer;
     border-radius: 6px;
     padding: 0.9rem;
     font-weight: 700;
